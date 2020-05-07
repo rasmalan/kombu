@@ -46,6 +46,6 @@ class Migration(migrations.Migration):
             model_name='message',
             name='queue',
             field=models.ForeignKey(
-                related_name='messages', to='kombu_transport_django.Queue', on_delete=django.db.models.deletion.CASCADE),
+                related_name='messages', to='kombu_transport_django.Queue', on_delete=models.deletion.CASCADE),
         ),
     ]
